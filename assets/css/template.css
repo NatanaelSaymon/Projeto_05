@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: #D6D6D6;
+    padding: 10px 2%; /*com base no tamanho da tela, sempre vai ficar certo*/
+}
+
+.logo-01{
+    float: left;
+    width: 150px;
+    height: 60px;
+    background-image: url('../image/logo1.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-02{
+    float: right;
+    width: 160px;
+    height: 60px;
+    background-image: url('../image/logo2.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*RESPONSIVO*/
+
+@media screen and (max-width: 510px){
+
+    header {
+        text-align: center;
+    }
+    .logo-01, .logo-02{
+        float: none;
+        margin-top: 10px;
+        display: inline-block;
+    }
+}

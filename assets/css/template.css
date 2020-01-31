@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -22,8 +22,8 @@ html, body{
 }
 
 header{
-    background-color: #D6D6D6;
-    padding: 10px 2% 30px 2%; /*com base no tamanho da tela, sempre vai ficar certo*/
+    background-color: rgb(180,180,180);
+    padding: 10px 2% 40px 2%; /*com base no tamanho da tela, sempre vai ficar certo*/
 }
 
 .logo-01{
@@ -60,6 +60,7 @@ section.cover-form{
 }
 
 .form-container{
+    z-index: 2;
     float: right;
     width: 400px;
     margin-right: 40px;
@@ -67,12 +68,13 @@ section.cover-form{
     position: relative; 
     top: -5%;
     background-color: #ffffff;
+    box-shadow: 1px 1px 2px 1px rgb(180,180,180);
 }
 
 .form-container h2{
     font-weight: normal;
-    background-color: rgb(234, 236, 239);
-    padding: 20px 15px;
+    background-color: rgb(210,210,210);
+    padding: 25px 15px;
     color: #000000;
     font-size: 18px;
 }
@@ -114,6 +116,51 @@ section.cover-form{
 .form-wraper:last-child{
     margin-top: 20px;
 }
+
+section.chamada{
+    z-index: 1;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+section.chamada .container{
+    padding: 50px 0;
+    background-color: #415B7E;
+}
+
+section.chamada h2{
+    width: 96%;
+    display: inline-block;
+    max-width: 700px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+section.chamada p{
+    color: #ffffff;
+    font-size: 17px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*RESPONSIVO*/
 

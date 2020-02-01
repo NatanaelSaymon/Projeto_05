@@ -13,7 +13,7 @@ html, body{
 
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -23,8 +23,8 @@ html, body{
 
 /* HEADER - CABEÇALHO*/
 header{
-    background-color: rgb(180,180,180);
-    padding: 10px 2% 40px 2%; /*com base no tamanho da tela, sempre vai ficar certo*/
+    background-color: rgb(220,220,220);
+    padding: 10px 2% 25px 2%; /*com base no tamanho da tela, sempre vai ficar certo*/
 }
 
 .logo-01{
@@ -119,6 +119,17 @@ section.cover-form{
 }
 
 /* SECTION CHAMADA */ 
+.icone-seta{
+    position: absolute;
+    left: 50%;
+    top: 625px; /*-32px;*/
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url('../image/arrow.png');
+}
 
 section.chamada{
     z-index: 1;
@@ -128,14 +139,15 @@ section.chamada{
 
 section.chamada div.container{
     padding: 70px 0 50px 0;
-    background-color: #415B7E;
+    /* background-color: #415B7E; */
+    background-color: rgb(220,220,220);
 }
 
 section.chamada h2{
     width: 98%;
     display: inline-block;
     max-width: 700px;
-    color: #ffffff;
+    color: #000000;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: normal;
@@ -145,10 +157,39 @@ section.chamada p{
     width: 98%;
     max-width: 700px;
     display: inline-block;
-    color: #ffffff;
+    color: #000000;
     font-size: 18px;
     margin-top: 10px;
     font-weight: normal;
+}
+
+/* GALERIA DE IMAGEM */
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    margin-bottom: 2px;
+}
+
+.item-2-mosaico{
+    width: 40%;
+    padding: 40px;
+    background-color: #f2f2f2;
+}
+
+/* FOOTER */
+footer .container{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f2f2f2;
+}
+
+footer img{
+    width: 130px;
 }
 
 /*RESPONSIVO*/
@@ -166,6 +207,22 @@ section.chamada p{
         max-width: 400px;
         position: static;
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .flex-mosaico{
+        display: block; 
+    }
+
+    .item-1-mosaico{
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaico{
+        width: 100%;
+        text-align: justify;
     }
 }
 
